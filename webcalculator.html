@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link href="assets/webcalculatorstyles.css" rel="stylesheet">
+    <script src="assets/webcalculator.js"></script>
+    <!-- <link rel="stylesheet" href="assets/webcalculator.js"> -->
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="heading">Web Calculator</h1>
+    </div>
+    <div id="calculator">
+        <table class="disp">
+            <tr>
+                <td> <input type="text" id="display" value="0">
+                </td>
+            </tr>
+            <table class="keys">
+            <tr>
+                <td colspan="2"><button  id="button-clear" onclick="clearButton()"  >C</button>
+                </td>
+                <td colspan="2"><button  id="button-clearall" onclick="allclearButton()"  >AC</button>
+                </td>
+               
+            </tr>
+            <tr>
+                <td><button  id="number-1" value="1" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">1</button>
+                </td>
+                <td><button  id="number-2" value="2" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">2</button>
+                </td>
+                <td><button  id="number-3" value="3" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">3</button>
+                </td>
+                <td><button  id="add" value="+" onclick="operatorClicked('add')"  class="btn btn-secondary btn-lg">+</button>
+                </td><br>
+            </tr>
+            <tr>
+                <td><button  id="number-4" value="4" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">4</button>
+                </td>
+                <td><button  id="number-5" value="5" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">5</button>
+                </td>
+                <td><button  id="number-6" value="6" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">6</button>
+                </td>
+                <td><button  id="substraction" value="-" onclick="operatorClicked('substraction')"  class="btn btn-secondary btn-lg">-</button>
+                    <td><br>
+            </tr>
+            <tr>
+                <td><button  id="number-7" value="7" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">7</button>
+                </td>
+                <td><button  id="number-8" value="6" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">8</button>
+                </td>
+                <td><button  id="number-9" value="9" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">9</button>
+                </td>
+                <td><button id="divisions"  value="/" onclick="operatorClicked('divisions')" class="btn btn-secondary btn-lg">÷</button>
+                </td><br>
+            </tr>
+            <tr>
+                <td><button  id="number-decimal" value="." onclick="numberButton(id)"  class="btn btn-primary btn-lg ">.</button>
+                </td>
+                <td><button  id="number-0" value="0" onclick="numberButton(id)"  class="btn btn-primary btn-lg ">0</button>
+                </td>
+                <td><button id="equalsto"  onclick="Buttonequalsto()" class="btn btn-secondary btn-lg">=</button>
+                </td>
+                <td><button id="multiplication" value="*"  onclick="operatorClicked('multiplication')" class="btn btn-secondary btn-lg">*</button>
+                </td>
+            </tr>
+            </table>
+        </table>
+    </div>
+    <!-- <script src="assets/jQuery.min.js"></script> -->
+   
+
+    <!-- <script>
+
+    </script> -->
+</body>
+
+</html>
